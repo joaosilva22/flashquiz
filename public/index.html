@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Flashcards</title>
+	<script src="app.js"></script>
+    </head>
+    <body onload="getRandomQuestion()">
+	<div class="header">
+	    <h1>flash<span class="blue">quiz</span></h1>
+	</div>
+	<div class="content">
+	    <div class="question">
+		<h2 id="question">Question</h2>
+	    </div>	    
+	    <div id="answers">
+		<div class="container">
+		    <button onClick="showAnswer(this)">Answer</button>
+		    <button onClick="showAnswer(this)">Answer</button>
+		</div>
+		<div class="container">
+		    <button onClick="showAnswer(this)">Answer</button>
+		    <button onClick="showAnswer(this)">Answer</button>
+		</div>
+	    </div>
+	    <div id="next">
+		<a class="muted" onClick="getRandomQuestion()">Next question <span id="arrows">&gt&gt</span></a>
+	    </div>
+	</div>
+	<div class="footer">
+	    <p class="muted">João Pedro Silva, 2016</p>
+	</div>
+    </body>
+</html>
