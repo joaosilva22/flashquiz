@@ -26,14 +26,6 @@ app.get('/api/question', (req, res) => {
     });
 });
 
-app.post('/api/question', (req, res) => {
-    Question.create({
-	question: req.body.question,
-	correct: req.body.correct,
-	wrong: [req.body.wrong1, req.body.wrond2, req.body.wrong3]
-    }, (err) => console.log(err));
-});
-
 app.get('/', (req, res) => res.sendFile('/index.html'));
 
 app.listen(8000);
