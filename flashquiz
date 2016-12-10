@@ -1,3 +1,2 @@
 #!/bin/bash
-mongod --dbpath ./data/ &
-node server.js && fg
+node server.js
