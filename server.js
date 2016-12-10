@@ -5,7 +5,7 @@ const port = 8000;
 
 app.use(express.static(__dirname + '/public'));
 
-mongoose.connect('mongodb://localhost:27017/flashcards');
+mongoose.connect('mongodb://public:password@ds119568.mlab.com:19568/flashquiz');
 
 let Question = mongoose.model('Question', {
     question: String,
